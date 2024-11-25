@@ -1,0 +1,18 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "/home/bgl4909a/CLionProjects/RPG/cmake-build-debug",
+	"dir-cur-src" : "/home/bgl4909a/CLionProjects/RPG",
+	"dir-top-bld" : "/home/bgl4909a/CLionProjects/RPG/cmake-build-debug",
+	"dir-top-src" : "/home/bgl4909a/CLionProjects/RPG",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/bgl4909a/CLionProjects/RPG/cmake-build-debug/CMakeFiles/MotMystere.dir"
+}
