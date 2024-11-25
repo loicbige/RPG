@@ -2,26 +2,25 @@
 #include <string>
 #include "Personnages.hpp"
 
-
 using namespace std;
- 
 
- 
 int main()
 {
-    Personnage david, goliath;
-
-    
-    //Création de 2 objets de type Personnage : david et goliath
- 
-    goliath.attaquer(david);    //goliath attaque david
-    david.boirePotionDeVie(20); //david récupère 20 de vie en buvant une potion
-    goliath.attaquer(david);    //goliath attaque david
-    david.attaquer(goliath);    //david contre-attaque... c'est assez clair non ?
-    
-    goliath.changerArme("Double hache tranchante veneneuse de la mort", 40);
+    // Création des personnages
+    Personnage david("David","Epée aiguisée", 20);
+    Personnage goliath("Goliath","Epée aiguisée", 20);
+    Personnage maximus("Maximus","Double Lame en Acier", 40);
+    // Au combat !
     goliath.attaquer(david);
- 
- 
+    david.boirePotionDeVie(20);
+    goliath.attaquer(david);
+    david.attaquer(goliath);
+    goliath.changerArme("Double hache tranchante vénéneuse de la mort", 40);
+    goliath.attaquer(david);
+
+    // Temps mort ! Voyons voir la vie de chacun...
+    david.afficherEtats();
+    goliath.afficherEtats();
+
     return 0;
 }
