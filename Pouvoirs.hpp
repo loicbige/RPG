@@ -5,14 +5,21 @@
 #ifndef POUVOIRS_HPP
 #define POUVOIRS_HPP
 
-
+#include <string>
 
 class Pouvoirs {
 
-// Méthodes
-public :
+// Méthodes;
+public:
+    Pouvoirs(int mana);
+    Pouvoirs(int mana, std::string nomSort, int Ap);
+
+
+
     int getAp() const;
 // Attributs
+
+
 private :
 
 std::string m_nomSort;

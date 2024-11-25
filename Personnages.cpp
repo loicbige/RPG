@@ -33,7 +33,7 @@ void Personnage::attaquer(Personnage &cible) {
 }
 
 void Personnage::attaquerMagique(Personnage &cible) {
-    cible.recevoirDegats(m_sort.getAp())
+    cible.recevoirDegats(m_sort.getAp());
 }
 
 void Personnage::boirePotionDeVie(int quantitePotion) 
