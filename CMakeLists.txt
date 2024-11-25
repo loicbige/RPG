@@ -9,4 +9,5 @@ add_executable(MotMystere main.cpp
         Arme.hpp
         Arme.cpp
         Pouvoirs.cpp
-        Pouvoirs.hpp)
+        Pouvoirs.hpp
+        )

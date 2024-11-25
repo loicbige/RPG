@@ -9,8 +9,11 @@ int main()
     // Création des personnages
     Personnage david("David","Epée aiguisée", 20);
     Personnage goliath("Goliath","Epée aiguisée", 20);
-    Personnage maximus("Maximus","Double Lame en Acier", 40);
+    Personnage sauron("Sauron", "Feu noir", 60, 50);
+    
     // Au combat !
+    sauron.attaquerMagique(david);
+    david.afficherEtats();
     goliath.attaquer(david);
     david.boirePotionDeVie(20);
     goliath.attaquer(david);

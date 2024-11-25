@@ -11,12 +11,14 @@ class Pouvoirs {
 
 // Méthodes;
 public:
-    Pouvoirs(int mana);
-    Pouvoirs(int mana, std::string nomSort, int Ap);
+    Pouvoirs();
+    Pouvoirs(int coutMana, std::string nomSort, int Ap);
 
 
-
+    void changerSort(std::string newSort, int degatSort)
+    std::string getSort() const;
     int getAp() const;
+    int getManaCost() const;
 // Attributs
 
 
@@ -24,7 +26,7 @@ private :
 
 std::string m_nomSort;
 int m_Ap;
-int m_mana;
+int m_coutMana;
 
 };
 
