@@ -15,7 +15,7 @@ public:
     Pouvoirs(int coutMana, std::string nomSort, int Ap);
 
 
-    void changerSort(std::string newSort, int degatSort)
+    void changerSort(std::string newSort, int degatSort);
     std::string getSort() const;
     int getAp() const;
     int getManaCost() const;

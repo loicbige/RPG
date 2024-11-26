@@ -5,3 +5,5 @@ build CMakeFiles/MotMystere.dir/Personnages.cpp.o: dyndep
 
 build CMakeFiles/MotMystere.dir/Arme.cpp.o: dyndep
 
+build CMakeFiles/MotMystere.dir/Pouvoirs.cpp.o: dyndep
+

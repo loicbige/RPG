@@ -52,14 +52,14 @@ build cmake_object_order_depends_target_MotMystere: phony || .
 build CMakeFiles/MotMystere.dir/main.cpp.o.ddi: CXX_SCAN__MotMystere_Debug /home/bgl4909a/CLionProjects/RPG/main.cpp || cmake_object_order_depends_target_MotMystere
   DEP_FILE = CMakeFiles/MotMystere.dir/main.cpp.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles/MotMystere.dir/main.cpp.o.ddi
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20
   OBJ_FILE = CMakeFiles/MotMystere.dir/main.cpp.o
   PREPROCESSED_OUTPUT_FILE = CMakeFiles/MotMystere.dir/main.cpp.o.ddi.i
 
 build CMakeFiles/MotMystere.dir/main.cpp.o: CXX_COMPILER__MotMystere_scanned_Debug /home/bgl4909a/CLionProjects/RPG/main.cpp | CMakeFiles/MotMystere.dir/main.cpp.o.modmap || cmake_object_order_depends_target_MotMystere CMakeFiles/MotMystere.dir/CXX.dd
   DEP_FILE = CMakeFiles/MotMystere.dir/main.cpp.o.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles/MotMystere.dir/main.cpp.o.modmap
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles/MotMystere.dir
   OBJECT_FILE_DIR = CMakeFiles/MotMystere.dir
   dyndep = CMakeFiles/MotMystere.dir/CXX.dd
@@ -67,14 +67,14 @@ build CMakeFiles/MotMystere.dir/main.cpp.o: CXX_COMPILER__MotMystere_scanned_Deb
 build CMakeFiles/MotMystere.dir/Personnages.cpp.o.ddi: CXX_SCAN__MotMystere_Debug /home/bgl4909a/CLionProjects/RPG/Personnages.cpp || cmake_object_order_depends_target_MotMystere
   DEP_FILE = CMakeFiles/MotMystere.dir/Personnages.cpp.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles/MotMystere.dir/Personnages.cpp.o.ddi
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20
   OBJ_FILE = CMakeFiles/MotMystere.dir/Personnages.cpp.o
   PREPROCESSED_OUTPUT_FILE = CMakeFiles/MotMystere.dir/Personnages.cpp.o.ddi.i
 
 build CMakeFiles/MotMystere.dir/Personnages.cpp.o: CXX_COMPILER__MotMystere_scanned_Debug /home/bgl4909a/CLionProjects/RPG/Personnages.cpp | CMakeFiles/MotMystere.dir/Personnages.cpp.o.modmap || cmake_object_order_depends_target_MotMystere CMakeFiles/MotMystere.dir/CXX.dd
   DEP_FILE = CMakeFiles/MotMystere.dir/Personnages.cpp.o.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles/MotMystere.dir/Personnages.cpp.o.modmap
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles/MotMystere.dir
   OBJECT_FILE_DIR = CMakeFiles/MotMystere.dir
   dyndep = CMakeFiles/MotMystere.dir/CXX.dd
@@ -82,14 +82,14 @@ build CMakeFiles/MotMystere.dir/Personnages.cpp.o: CXX_COMPILER__MotMystere_scan
 build CMakeFiles/MotMystere.dir/Arme.cpp.o.ddi: CXX_SCAN__MotMystere_Debug /home/bgl4909a/CLionProjects/RPG/Arme.cpp || cmake_object_order_depends_target_MotMystere
   DEP_FILE = CMakeFiles/MotMystere.dir/Arme.cpp.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles/MotMystere.dir/Arme.cpp.o.ddi
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20
   OBJ_FILE = CMakeFiles/MotMystere.dir/Arme.cpp.o
   PREPROCESSED_OUTPUT_FILE = CMakeFiles/MotMystere.dir/Arme.cpp.o.ddi.i
 
 build CMakeFiles/MotMystere.dir/Arme.cpp.o: CXX_COMPILER__MotMystere_scanned_Debug /home/bgl4909a/CLionProjects/RPG/Arme.cpp | CMakeFiles/MotMystere.dir/Arme.cpp.o.modmap || cmake_object_order_depends_target_MotMystere CMakeFiles/MotMystere.dir/CXX.dd
   DEP_FILE = CMakeFiles/MotMystere.dir/Arme.cpp.o.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles/MotMystere.dir/Arme.cpp.o.modmap
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles/MotMystere.dir
   OBJECT_FILE_DIR = CMakeFiles/MotMystere.dir
   dyndep = CMakeFiles/MotMystere.dir/CXX.dd
@@ -97,14 +97,14 @@ build CMakeFiles/MotMystere.dir/Arme.cpp.o: CXX_COMPILER__MotMystere_scanned_Deb
 build CMakeFiles/MotMystere.dir/Pouvoirs.cpp.o.ddi: CXX_SCAN__MotMystere_Debug /home/bgl4909a/CLionProjects/RPG/Pouvoirs.cpp || cmake_object_order_depends_target_MotMystere
   DEP_FILE = CMakeFiles/MotMystere.dir/Pouvoirs.cpp.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles/MotMystere.dir/Pouvoirs.cpp.o.ddi
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20
   OBJ_FILE = CMakeFiles/MotMystere.dir/Pouvoirs.cpp.o
   PREPROCESSED_OUTPUT_FILE = CMakeFiles/MotMystere.dir/Pouvoirs.cpp.o.ddi.i
 
 build CMakeFiles/MotMystere.dir/Pouvoirs.cpp.o: CXX_COMPILER__MotMystere_scanned_Debug /home/bgl4909a/CLionProjects/RPG/Pouvoirs.cpp | CMakeFiles/MotMystere.dir/Pouvoirs.cpp.o.modmap || cmake_object_order_depends_target_MotMystere CMakeFiles/MotMystere.dir/CXX.dd
   DEP_FILE = CMakeFiles/MotMystere.dir/Pouvoirs.cpp.o.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles/MotMystere.dir/Pouvoirs.cpp.o.modmap
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles/MotMystere.dir
   OBJECT_FILE_DIR = CMakeFiles/MotMystere.dir
   dyndep = CMakeFiles/MotMystere.dir/CXX.dd

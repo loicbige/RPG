@@ -43345,7 +43345,31 @@ class Arme
     int m_degats;
 };
 # 7 "/home/bgl4909a/CLionProjects/RPG/Personnages.hpp" 2
+# 1 "/home/bgl4909a/CLionProjects/RPG/Pouvoirs.hpp" 1
+# 10 "/home/bgl4909a/CLionProjects/RPG/Pouvoirs.hpp"
+class Pouvoirs {
 
+
+public:
+    Pouvoirs();
+    Pouvoirs(int coutMana, std::string nomSort, int Ap);
+
+
+    void changerSort(std::string newSort, int degatSort);
+    std::string getSort() const;
+    int getAp() const;
+    int getManaCost() const;
+
+
+
+private :
+
+std::string m_nomSort;
+int m_Ap;
+int m_coutMana;
+
+};
+# 8 "/home/bgl4909a/CLionProjects/RPG/Personnages.hpp" 2
 
 
 class Personnage
@@ -43354,12 +43378,15 @@ public:
 
     Personnage();
     Personnage(std::string nom,std::string nomArme, int degatsArme);
+    Personnage(std::string nom, std::string nomSort, int degatAp, int coutMana);
 
     void afficherEtats() const;
     void recevoirDegats(int nbDegats);
     void attaquer(Personnage &cible);
+    void attaquerMagique(Personnage &cible);
     void boirePotionDeVie(int quantitePotion);
     void changerArme(std::string nomNouvelleArme, int degatsNouvelleArme);
+    void changerSort(std::string nomNouveauSort, int degatNouveauSort);
     bool estVivant() const;
 
 
@@ -43370,6 +43397,7 @@ private:
     int m_vie;
     int m_mana;
     Arme m_arme;
+    Pouvoirs m_sort;
 };
 # 4 "/home/bgl4909a/CLionProjects/RPG/main.cpp" 2
 
@@ -43380,8 +43408,11 @@ int main()
 
     Personnage david("David","Epée aiguisée", 20);
     Personnage goliath("Goliath","Epée aiguisée", 20);
-    Personnage maximus("Maximus","Double Lame en Acier", 40);
+    Personnage sauron("Sauron", "Feu noir", 60, 50);
 
+
+    sauron.attaquerMagique(david);
+    david.afficherEtats();
     goliath.attaquer(david);
     david.boirePotionDeVie(20);
     goliath.attaquer(david);
@@ -43390,9 +43421,7 @@ int main()
     goliath.attaquer(david);
 
 
-    cout << "David" << endl;
     david.afficherEtats();
-    cout << endl << "Goiath" << endl;
     goliath.afficherEtats();
 
     return 0;

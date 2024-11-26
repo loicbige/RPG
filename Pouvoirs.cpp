@@ -8,7 +8,7 @@ using namespace std;
 
 // Constructeur :
 
-Pouvoirs::Pouvoirs() : m_Coutmana(10), m_nomSort("Boule de feu"), m_Ap(25)
+Pouvoirs::Pouvoirs() : m_coutMana(10), m_nomSort("Boule de feu"), m_Ap(25)
 {
 
 }
@@ -17,14 +17,14 @@ Pouvoirs::Pouvoirs(int coutMana, string nomSort, int Ap) : m_nomSort(nomSort), m
 
 }
 
-void changerSort(string newSort, int degatSort) {
+void Pouvoirs::changerSort(string newSort, int degatSort) {
     m_nomSort = newSort;
     m_Ap = degatSort;
 }
 
 // GET
 
-string getSort() const {
+string Pouvoirs::getSort() const {
     return m_nomSort;
 }
 
@@ -32,6 +32,6 @@ int Pouvoirs::getAp() const {
     return m_Ap;
 }
 
-int getManaCost() const {
+int Pouvoirs::getManaCost() const {
     return m_coutMana;
 }

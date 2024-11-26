@@ -156,4 +156,5 @@ CMakeFiles/MotMystere.dir/main.cpp.o.ddi: \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
  /usr/include/c++/14/bits/istream.tcc \
  /home/bgl4909a/CLionProjects/RPG/Personnages.hpp \
- /home/bgl4909a/CLionProjects/RPG/Arme.hpp
+ /home/bgl4909a/CLionProjects/RPG/Arme.hpp \
+ /home/bgl4909a/CLionProjects/RPG/Pouvoirs.hpp

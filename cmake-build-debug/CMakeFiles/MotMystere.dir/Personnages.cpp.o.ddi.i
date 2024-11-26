@@ -31941,7 +31941,31 @@ class Arme
     int m_degats;
 };
 # 7 "/home/bgl4909a/CLionProjects/RPG/Personnages.hpp" 2
+# 1 "/home/bgl4909a/CLionProjects/RPG/Pouvoirs.hpp" 1
+# 10 "/home/bgl4909a/CLionProjects/RPG/Pouvoirs.hpp"
+class Pouvoirs {
 
+
+public:
+    Pouvoirs();
+    Pouvoirs(int coutMana, std::string nomSort, int Ap);
+
+
+    void changerSort(std::string newSort, int degatSort);
+    std::string getSort() const;
+    int getAp() const;
+    int getManaCost() const;
+
+
+
+private :
+
+std::string m_nomSort;
+int m_Ap;
+int m_coutMana;
+
+};
+# 8 "/home/bgl4909a/CLionProjects/RPG/Personnages.hpp" 2
 
 
 class Personnage
@@ -31950,12 +31974,15 @@ public:
 
     Personnage();
     Personnage(std::string nom,std::string nomArme, int degatsArme);
+    Personnage(std::string nom, std::string nomSort, int degatAp, int coutMana);
 
     void afficherEtats() const;
     void recevoirDegats(int nbDegats);
     void attaquer(Personnage &cible);
+    void attaquerMagique(Personnage &cible);
     void boirePotionDeVie(int quantitePotion);
     void changerArme(std::string nomNouvelleArme, int degatsNouvelleArme);
+    void changerSort(std::string nomNouveauSort, int degatNouveauSort);
     bool estVivant() const;
 
 
@@ -31966,6 +31993,7 @@ private:
     int m_vie;
     int m_mana;
     Arme m_arme;
+    Pouvoirs m_sort;
 };
 # 2 "/home/bgl4909a/CLionProjects/RPG/Personnages.cpp" 2
 
@@ -43394,13 +43422,17 @@ namespace std __attribute__ ((__visibility__ ("default")))
 using namespace std;
 
 
-Personnage::Personnage() : m_vie(100), m_mana(100), m_arme("Epée en bois", 5), m_nom("Gladiateur"){
+Personnage::Personnage() : m_vie(100), m_mana(100), m_arme("Epée en bois", 5), m_sort(200, "Bulle pestilanciel", 1),m_nom("Gladiateur"){
 }
 
 Personnage::Personnage(string nom, string nomArme, int degatsArme) : m_vie(100), m_mana(100), m_arme(nomArme, degatsArme), m_nom(nom) {
 
 }
 
+
+Personnage::Personnage(string nom, string nomSort, int degatAp, int coutMana) : m_vie(80), m_mana(200), m_sort(coutMana, nomSort, degatAp), m_nom(nom) {
+
+}
 
 void Personnage::recevoirDegats(int nbDegats)
 {
@@ -43420,6 +43452,10 @@ void Personnage::attaquer(Personnage &cible) {
 
 }
 
+void Personnage::attaquerMagique(Personnage &cible) {
+    cible.recevoirDegats(m_sort.getAp());
+}
+
 void Personnage::boirePotionDeVie(int quantitePotion)
 {
 
@@ -43433,10 +43469,17 @@ void Personnage::boirePotionDeVie(int quantitePotion)
 }
 
 
+
+void Personnage::changerSort(std::string nomNouveauSort, int degatNouveauSort) {
+    m_sort.changerSort(nomNouveauSort, degatNouveauSort);
+}
+
 void Personnage::changerArme(string nomNouvelleArme, int degatsNouvelleArme) {
 
    m_arme.changer(nomNouvelleArme, degatsNouvelleArme);
 }
+
+
 
 bool Personnage::estVivant() const {
     return m_vie > 0;

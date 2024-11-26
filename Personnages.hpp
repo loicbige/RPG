@@ -5,7 +5,7 @@
 
 #include "Arme.hpp"
 #include "Pouvoirs.hpp"
-
+#include <string>
 
 class Personnage
 {
@@ -13,7 +13,7 @@ public:
 
     Personnage();
     Personnage(std::string nom,std::string nomArme, int degatsArme);
-    Personnage(string nom, string nomSort, int degatAp, int coutMana);
+    Personnage(std::string nom, std::string nomSort, int degatAp, int coutMana);
 
     void afficherEtats() const;
     void recevoirDegats(int nbDegats);

@@ -6,7 +6,7 @@
 using namespace std;
 
  // Gladiateur X
-Personnage::Personnage() : m_vie(100), m_mana(100), m_arme("Epée en bois", 5), m_sort("Bulle pestilanciel", 1),m_nom("Gladiateur"){
+Personnage::Personnage() : m_vie(100), m_mana(100), m_arme("Epée en bois", 5), m_sort(200, "Bulle pestilanciel", 1),m_nom("Gladiateur"){
 }
  // Combattants
 Personnage::Personnage(string nom, string nomArme, int degatsArme) : m_vie(100), m_mana(100), m_arme(nomArme, degatsArme), m_nom(nom) {
@@ -14,7 +14,9 @@ Personnage::Personnage(string nom, string nomArme, int degatsArme) : m_vie(100),
 }
 // Mages
 
-Personnage::Personnage(string nom, string nomSort, int degatAp, int coutMana) : m_vie(80), m_mana(200), m_sort(coutMana, nomSort, degatAp)
+Personnage::Personnage(string nom, string nomSort, int degatAp, int coutMana) : m_vie(80), m_mana(200), m_sort(coutMana, nomSort, degatAp), m_nom(nom) {
+
+}
 
 void Personnage::recevoirDegats(int nbDegats) 
 {
@@ -52,7 +54,7 @@ void Personnage::boirePotionDeVie(int quantitePotion)
 // Changer 
 
 
-void changerSort(std::string nomNouveauSort, int degatNouveauSort) {
+void Personnage::changerSort(std::string nomNouveauSort, int degatNouveauSort) {
     m_sort.changerSort(nomNouveauSort, degatNouveauSort);
 }
 
